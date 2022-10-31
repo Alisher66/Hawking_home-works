@@ -22,7 +22,7 @@ async function getNum() {
 
 async function lottery() {
     console.log("вы начали игру");
-    await setTimeout(async () => {
+    setTimeout(async () => {
         let rand = await getNum();
         if (rand > 0.5) {
             console.log("Вы выиграли")
